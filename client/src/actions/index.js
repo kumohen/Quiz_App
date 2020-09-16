@@ -1,5 +1,5 @@
-// import axios from "axios";
-import axios from "../utils/endpoint";
+import axios from "axios";
+// import axios from "../utils/endpoint";
 import history from "../utils/history";
 
 import {
