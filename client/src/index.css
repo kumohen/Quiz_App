@@ -1,0 +1,416 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@font-face {
+  font-family: "Jersey-m54";
+  src: local("Jersey-m54"), url(./fonts/JerseyM54-aLX9.ttf) format("truetype");
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.qs_container {
+  display: flex;
+  margin-top: 63px;
+}
+.qs_left {
+  width: 20vw;
+  height: 90vh;
+  border: 1px solid red;
+  padding-top: 3%;
+  padding-left: 2%;
+}
+.qs_right {
+  width: 55vw;
+  height: 90vh;
+  border: 1px solid green;
+  padding: 5%;
+}
+.mark_side {
+  width: 17vw;
+  border: 2px solid black;
+  height: 90vh;
+  padding-top: 3%;
+}
+.qs_list {
+  display: flex;
+  margin-bottom: 8px;
+}
+.qs_list .child_left_list {
+  width: 2vw;
+  margin-right: 20px;
+  border: 2px solid blue;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+}
+.child_right_list {
+  width: 60vw;
+  margin-top: -4px;
+}
+.child_right_list p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* 
+login style */
+.login_container {
+  height: 100vh;
+  width: 100vw;
+
+  background-color: #273036;
+  position: fixed;
+}
+.login {
+  height: 60vh;
+  width: 40vw;
+  padding: 2%;
+  margin-top: 13vh;
+  margin-left: 29vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 100;
+  background-color: #fff;
+}
+.login_form {
+  width: 80%;
+  margin-left: 10%;
+  z-index: 100;
+}
+.login_title {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.login_footer {
+  text-align: center;
+  font-weight: 200;
+  font-size: 18px;
+  margin-top: 5px;
+}
+.mr {
+  font-size: 20px;
+  margin-right: 15%;
+  text-decoration: none;
+  list-style: none;
+  padding: 10px 20px;
+
+  width: 100px;
+}
+.mr:hover {
+  background-color: black;
+  color: white;
+}
+.forget_ {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 200;
+  margin-left: 40%;
+  margin-top: 5px;
+}
+
+/* .login_container {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("./image/quiz.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -97px;
+} */
+
+/* start page */
+
+.start_page {
+  width: 60vw;
+  margin: 0 auto;
+  border: 1px solid black;
+  padding: 1%;
+}
+.start_page h2,
+h1 {
+  font-size: 22px;
+  font-weight: 700;
+}
+.start_page p {
+  font-size: 18px;
+  font-weight: 300;
+  text-align: justify;
+}
+
+#start_btn {
+  margin-left: 40%;
+  height: 40px;
+  width: 100px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+#declare {
+  font-size: 18px;
+  color: red;
+}
+.mark_side p {
+  margin-left: 20%;
+}
+.mark_att {
+  font-family: "Jersey-m54";
+  font-size: 50px;
+  font-weight: 500;
+}
+.obliege {
+  font-size: 50px;
+  font-weight: 500;
+}
+#progression {
+  height: 25px;
+  margin: 3px;
+  font-size: 11px;
+  color: black;
+  margin-bottom: 10px;
+}
+#attemp_qs,
+#unattemp_qs {
+  height: 26px;
+  margin-left: 5px;
+}
+#test_submit {
+  height: 50px;
+  width: 120px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 20%;
+  margin-top: 10px;
+  background-color: #096f0a;
+  border-radius: 10px;
+}
+.modal_full {
+  height: 300px;
+  width: 500px;
+  border: 1px solid red;
+  padding-left: 93px;
+  padding-top: 10%;
+}
+.modal_full h3 {
+  font-size: 20px;
+}
+#modal_div {
+  display: flex;
+  margin-left: 60px;
+  margin-top: 20px;
+}
+#modal_btn {
+  width: 80px;
+  height: 40px;
+  float: left;
+  margin-left: 13px;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  border: 2px solid blueviolet;
+}
+
+/* navbar */
+
+.navbar {
+  position: absolute;
+  top: 0;
+  height: 63px;
+  width: 100vw;
+  background-color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 2px;
+}
+.navbar h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+.timer_text {
+  font-size: 20px;
+  color: #fff;
+  /* font-weight: 400; */
+  font-family: "Jersey-m54";
+  text-align: center;
+  margin-top: 5px;
+}
+.timee_m {
+  color: white;
+  font-size: 17px;
+  text-align: center;
+  margin-top: 5px;
+}
+.student {
+  display: flex;
+  flex-direction: row;
+}
+#img_style {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.student p {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 700;
+  margin-right: 60px;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+.timer_nav {
+  height: 100%;
+  width: 110px;
+  border: 2px solid red;
+  padding-top: 12px;
+  padding-left: 15px;
+}
+.question_no {
+  height: 80vh;
+  width: 10vw;
+  border: 1px solid green;
+  padding-left: 34px;
+  padding-top: 30px;
+  background-color: #3f3333;
+}
+.question_no p {
+  font-size: 17px;
+  font-weight: 500;
+  margin-left: -17px;
+  margin-top: -17px;
+  background-color: brown;
+  width: 120px;
+  color: #fff;
+  height: 40px;
+  text-align: center;
+  padding-top: 4px;
+}
+.right_index {
+  margin-left: 50px;
+  margin-top: -60px;
+}
+
+/* Registration from */
+
+.registration {
+  display: flex;
+}
+.regis_left {
+  width: 50vw;
+  float: left;
+}
+
+.regis_right {
+  width: 40vw;
+  margin: 0 auto;
+  border: 1px solid green;
+  height: 95vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.regis_title {
+  height: 73px;
+  background-color: #2077c8;
+}
+.regis_title p {
+  font-size: 28px;
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 16px;
+}
+.registration_con {
+  padding: 10px;
+}
+.btn_regis {
+  height: 45px;
+  width: 37vw;
+  background-color: #c72024;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+#regis_img {
+  width: 50vw;
+  height: 99vh;
+}
+
+#registration_input4,
+#registration_input3,
+#registration_input2,
+#registration_input1 {
+  height: 50px;
+  margin-bottom: 10px;
+  border: none;
+  border-width: 0;
+  box-shadow: none;
+}
+input:focus {
+  outline: none;
+}
+
+#inputState {
+  height: 50px;
+  margin-bottom: 10px;
+  width: 320px;
+}
+.input-field2 span {
+  font-size: 17px;
+  color: black;
+  font-weight: 500;
+}
+input[type="file"] {
+  height: 41px;
+  width: 92px;
+  background-color: #1a8c0f;
+  padding: 7px 2px;
+  margin-left: 10px;
+}
+
+#error {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #a63312;
+  height: 40px;
+}
+#error p {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  padding-top: 5px;
+}
+
+#result_img {
+  height: 210px;
+  width: 60%;
+  margin-top: -51px;
+  margin-left: 21px;
+  border-radius: 50%;
+}
+.modal_full p {
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 110px;
+}
+#mark {
+  font-size: 32px;
+  font-weight: 700;
+  margin-left: 20px;
+  margin-top: -20px;
+}
+#check_score {
+  margin-top: 18%;
+  margin-left: 41%;
+  height: 50px;
+  width: 130px;
+}

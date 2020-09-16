@@ -1,0 +1,5 @@
+{
+  "MONGO_URI": "mongodb://mahen:12345a@ds061158.mlab.com:61158/online_exam_2020",
+  "JWT_SECRET": "MOHENMONDALJDFKFLL",
+  "SENDGID": "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"
+}
